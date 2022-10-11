@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import ProductFeed from '../components/ProductFeed';
 import { GetServerSideProps } from 'next';
-import { ProductType } from '../types/product';
+import { ProductType } from '../../types/product';
 
 interface HomeProps {
   products: ProductType[]

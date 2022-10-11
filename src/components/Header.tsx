@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import { MenuIcon, SearchIcon, ShoppingCartIcon } from '@heroicons/react/outline'
+import { signIn, signOut, useSession } from 'next-auth/react'
+
 
 type Props = {}
 
 
 const Header = ( props: Props ) => {
+
+  const { data: session, status } = useSession()
+
   return (
     <header>
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
@@ -28,9 +33,9 @@ const Header = ( props: Props ) => {
 
 
         <div className='flex space-x-6 mx-6 items-center text-sm text-white'>
-          <div className='link'>
-            <p>Hi there Lorem</p>
-            <p className='font-extrabold md:text-sm'>Accounts & Lists</p>
+          <div onClick={ !session ? () => signIn() : () => signOut() } className='link text-right'>
+            <p>{ session ? `Hello ${ session?.user.name }` : 'Sign In' }</p>
+            { session && <p className='font-extrabold md:text-sm'>Sign Out</p> }
           </div>
           <div className='link'>
             <p>Returns</p>
