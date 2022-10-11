@@ -7,3 +7,7 @@
 .link { 
 @apply cursor-pointer active:scale-95 select-none active:text-gray-300 border border-transparent rounded-sm hover:border-white}
 }
+
+.button {
+@apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-yellow-500 active:from-yellow-500
+}

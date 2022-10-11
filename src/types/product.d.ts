@@ -3,7 +3,7 @@ type Rating = {
   count: number
 }
 
-export interface Product {
+export interface ProductType {
   id: number;
   title: string;
   price: number;
