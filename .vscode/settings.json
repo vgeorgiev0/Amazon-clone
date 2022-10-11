@@ -8,12 +8,14 @@
     "craco",
     "daisyui",
     "dbquery",
+    "fakestoreapi",
     "Grafana",
     "heroicons",
     "languagedetector",
     "materializer",
     "NEXTAUTH",
     "PAPAFAM",
+    "papareact",
     "reduxjs",
     "signalr",
     "STEPZEN",
@@ -37,5 +39,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "expo.appManifest.fileReferences.showHiddenFiles": true
 }
