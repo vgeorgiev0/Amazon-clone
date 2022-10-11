@@ -14,6 +14,7 @@ const Banner = ( props: Props ) => {
         showStatus={ false }
         showIndicators={ false }
         showThumbs={ false }
+        swipeable
         interval={ 5000 }
       >
         <div>
