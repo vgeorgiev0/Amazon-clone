@@ -5,5 +5,5 @@
 
 @layer components {
 .link { 
-@apply cursor-pointer hover:underline active:scale-95 select-none}
+@apply cursor-pointer active:scale-95 select-none active:text-gray-300 border border-transparent rounded-sm hover:border-white}
 }
